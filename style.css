@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-color: #143f70;
+    color: #0f0f0f;
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+/* 0a415c */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+li {
+    float: right;
+    display: block;
+    padding: 8px;
+    background-color: #f0f0f0;
+    font-size: 20px;
+    font-weight: 450;
+    margin-top: 10px;
+    margin-bottom: -3px;
+}
+
+#logo {
+    height: auto;
+    width: 75px;
+    background-color: #f0f0f0; 
+    margin-left: 20px;
+}
+
+.active {
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+    padding-top: 30px;
+    padding-bottom: 22px;
+    margin-top: -12px;
+}
+
+.content {
+    margin-top: 70px;
+    /* border: 2px solid red; */
+    padding-bottom: 36px;
+    padding-top: 15px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 15%, rgba(0, 0, 0, 0.514)), url(./images/background-gym.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f0f0f0;
+}
+
+.mainParagraph {
+    color: #f0f0f0;
+    margin-left: 240px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#lilSlogan {
+    margin-top: -80px;
+    margin-left: 240px;
+    font-size: 15px;
+}
+
+.secondContent {
+    display: flex;
+    justify-content: center;
+}
+
+.secondImage {
+    border: 2px solid red;
+    padding: 200px;
+}
+
+.secondText {
+    border: 2px solid green;
+    color: white;
+    padding-top: 100px;
+    padding-right: 115px;
+    padding-left: 115px;
+    text-align: left;
+    font-size: 20px;
+}
