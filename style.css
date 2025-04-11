@@ -98,11 +98,22 @@ li a {
 
 .secondImage {
     border: 2px solid red;
-    padding: 200px;
+    /* padding: 0 200px; */
+
+}
+
+.mockUp {
+    width: 1250px;
+    height: auto;
+    display: block;
+    /* margin: 0 auto; */ /* Centraliza, se quiser */
+    margin: -350px;
+    padding-top: 220px;
+    padding-bottom: 250px;
 }
 
 .secondText {
-    /* border: 2px solid green; */
+    border: 2px solid green;
     color: white;
     padding-top: 100px;
     padding-right: 115px;
