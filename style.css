@@ -65,6 +65,7 @@ li a {
 }
 
 .content {
+    display: flex;
     margin-top: 70px;
     /* border: 2px solid red; */
     padding-bottom: 36px;
@@ -86,9 +87,25 @@ li a {
 }
 
 #lilSlogan {
-    margin-top: -80px;
-    margin-left: 240px;
-    font-size: 15px;
+  padding-bottom: 0px;
+  margin-top: 360px;
+  margin-left: -305px;
+}
+
+#previewButton {
+    background-color: #143f70; 
+    color: white; 
+    border: none;
+    padding: 0px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-left: 400px;
+    margin-top: 190px;
+    margin-bottom: 190px;
+    box-shadow: 0 0 10px #143f70; 
+    transition: box-shadow 0.3s ease;
 }
 
 .secondContent {
