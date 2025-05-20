@@ -1,0 +1,136 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
+
+body {
+    background-color: #143f70;
+    color: #0f0f0f;
+    font-family: 'poppins', sans-serif;
+    margin: 0;
+}
+/* 0a415c */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #f0f0f0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    /* border: 2px solid red; */
+    height: 70px; 
+    display: flex; 
+    justify-content: flex-end; 
+    align-items: center; 
+}
+
+li {
+    float: right;
+    margin: 0;
+}
+
+li a {
+    display: block;
+    color: #0f0f0f;
+    text-align: center;
+    padding: 0 16px;
+    text-decoration: none;
+    height: 70px;
+    line-height: 70px;
+    font-size: 20px;
+    font-weight: 450;
+}
+
+.active {
+    background-color: #0f0f0f;
+    color: #f0f0f0;
+}
+
+#logoImg {
+    height: auto;
+    width: 75px;
+    background-color: #f0f0f0; 
+    margin-left: 20px;
+    position: absolute;
+    left: 0; 
+    margin-top: -17px;
+}
+
+#logoText {
+    height: auto;
+    width: 75px;
+    background-color: #f0f0f0; 
+    margin-left: 20px;
+    position: absolute;
+    left: 90px;
+}
+
+.content {
+    display: flex;
+    margin-top: 70px;
+    /* border: 2px solid red; */
+    padding-bottom: 36px;
+    padding-top: 15px;
+    background-image: linear-gradient(to right, rgb(0, 0, 0) 15%, rgba(0, 0, 0, 0.514)), url(./images/background-gym.jpg);
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: #f0f0f0;
+}
+
+.mainParagraph {
+    color: #f0f0f0;
+    margin-left: 240px;
+    margin-top: 20px;
+    margin-bottom: 80px;
+    font-size: 70px;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+}
+
+#lilSlogan {
+  padding-bottom: 0px;
+  margin-top: 360px;
+  margin-left: -305px;
+}
+
+#previewButton {
+    background-color: #143f70; 
+    color: white; 
+    border: none;
+    padding: 0px 25px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    margin-left: 400px;
+    margin-top: 190px;
+    margin-bottom: 190px;
+    box-shadow: 0 0 10px #143f70; 
+    transition: box-shadow 0.3s ease;
+}
+
+.secondContent {
+    display: flex;
+}
+
+.secondImage {
+    /* border: 2px solid red; */
+    margin-left: 150px;
+}
+
+.mockUp {
+    width: 300px;
+    height: auto;
+    display: block;
+    padding: 40px 60px;
+}
+
+.secondText {
+    /* border: 2px solid green; */
+    color: white;
+    padding: 60px;
+    margin-right: 150px;
+    margin-top: 60px;
+    text-align: left;
+    font-size: 22px;
+    font-weight: 450;
+}

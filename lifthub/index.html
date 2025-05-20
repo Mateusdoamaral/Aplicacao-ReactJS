@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="app.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react@18.2.0/umd/react.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/react-dom@18.2.0/umd/react-dom.development.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@babel/standalone@7.22.5/babel.min.js"></script>
+</head>
+<body>
+    <ul>
+        <li ><a href="javascript:void(0)" class="active">Home</a></li>
+        <li><a href="javascript:void(0)">Sign Up</a></li>
+        <li style="float: left;"><img src="./images/logo_lifthub.jpg" alt="Logo lift hub" id="logoImg"></li>
+        <li style="float: left; font-weight: 1000;" id="logoText">Lift Hub</li>
+    </ul>
+    
+    <div class="content">
+        <p class="mainParagraph">seu CORPO <br> sua MENTE <br> seu RITMO <br> seu APP.</p>
+        <p id="lilSlogan">Um App, toda a sua jornada.</p>
+        <button id="previewButton">
+            Clique para ter uma prévia
+        </button>
+    </div>
+       <div id="secondContentRoot"></div>
+
+       <script type="text/babel">
+           function SecondContent() {
+               return (
+                   <div className="secondContent">
+                       <div className="secondImage">
+                           <img src="./images/mockup_celular2.png" alt="prévia do aplicativo" height="auto" width="300px" className="mockUp" />
+                       </div>
+                       <div className="secondText">
+                           <p>Aplicativo para acompanhamento de treinos e dietas, com funcionalidades integradas para avaliação física, mental e comunicação direta entre o aluno e seu instrutor (personal trainer ou nutricionista).
+                           O projeto visa oferecer uma plataforma centralizada onde o aluno pode registrar sua evolução, responder anamneses, realizar avaliações semanais com fotos e receber feedback personalizado do instrutor, promovendo um acompanhamento mais eficaz e humanizado.</p>
+                       </div>
+                   </div>
+               );
+           }
+   
+           const button = document.getElementById('previewButton');
+        let isVisible = false;
+
+        button.addEventListener('click', () => {
+            if (isVisible) {
+                ReactDOM.render(null, document.getElementById('secondContentRoot'));
+                button.textContent = 'Clique para ter uma prévia';
+            } else {
+                ReactDOM.render(<SecondContent />, document.getElementById('secondContentRoot'));
+                button.textContent = 'Esconder prévia';
+            }
+            isVisible = !isVisible;
+        });
+
+        button.addEventListener('mouseover', () => {
+            button.style.boxShadow = '0 0 20px rgba(30, 144, 255, 1)';
+        });
+        button.addEventListener('mouseout', () => {
+            button.style.boxShadow = '0 0 10px rgba(30, 144, 255, 0.7)';
+        });
+       </script>
+   
+</body>
+</html>
